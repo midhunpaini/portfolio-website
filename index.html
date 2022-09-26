@@ -21,6 +21,7 @@
     <title>Midhun Webpage Title</title>
     
     <!-- Styles -->
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +30,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -67,13 +68,13 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.facebook.com/mkpcool">
+                        <a href="https://www.facebook.com/mkpcool" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://twitter.com/MidhunPaini">
+                        <a href="https://twitter.com/MidhunPaini" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-twitter fa-stack-1x"></i>
                         </a>
@@ -182,7 +183,8 @@
                             <h5>DEVELOPMENT SKILLS</h5>
                             <p>I am familiar and work on a daily basis with HTML, JavaScript and other modern frameworks</p>
                             
-                            <div class="icons-container">                                
+                            <div class="icons-container">
+                                
                                 <img src="images/details-icon-html.png" alt="alternative">
                                 <img src="images/details-icon-css.png" alt="alternative">
                                 <img src="images/details-icon-bootstrap.png" alt="alternative">
@@ -231,7 +233,16 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-3 -->
-         <!-- Section Divider -->
+    <!-- end of projects -->
+
+
+    
+
+
+   
+
+
+    <!-- Section Divider -->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -335,25 +346,41 @@
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <!-- Contact Form -->
-                    <form id="submit-form"action="https://script.google.com/macros/s/AKfycbygOrAu6CCmBSdzSZianVouxuZm16v_U6ilu23grPlcqPZ_3EqC6rHGfIL4qgSDltVy/exec">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                     <form action="" name="f1" method="post" id="submit-form"  class="contact__form">
+                        <table style="width: 100%">
+                        <div class="contact__form-field form-group ">
+                              <tr>
+                              <td><label class="contact_form-label" for="email">Name</label><input type="text" class="contact_form-input form-control-input" id="inpn" name = "name" placeholder="enter your name"></td>
+                              </tr>             
+                              <tr>
+                              <td><p class="ere"  id="pname"></p></td>
+                              </tr>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+          
+          
+          
+                        <div class="contact__form-field form-group">
+                              <tr>
+                              <td><label class="contact_form-label" for="email">Email</label><input type="email"id="inpe"  class="contact_form-input form-control-input" name = "email" placeholder="enter your Email ID" data-rule="required"></td>
+                              </tr>
+                              <tr>
+                              <td><p class="ere" id="pemail"></p></td>
+                              </tr>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Project details</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+          
+          
+                        <div class="contact__form-field form-group"></div>
+                                <tr>
+                                <td><label class="contact_form-label" for="email">Message</label><textarea name="textArea" class="contact_form-input form-control-textarea" id="inpa" id="" cols="30" rows="10"></textarea></td>
+                                </tr>
+                                <tr>
+                                <td><p class="ere" id="parea"></p></td>
+                                </tr>
+                                <tr> 
+                                <td><button type="submit" class="btn btn--theme contact__btn form-control-submit-button" onclick="return validate()">submit</button></td>
+                                </tr> 
+                          </table>
+                     </form>
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -369,31 +396,31 @@
                 <div class="col-lg-12">
                     <div class="social-container">
                         <span class="fa-stack">
-                            <a href="https://www.facebook.com/mkpcool">
+                            <a href="https://www.facebook.com/mkpcool" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://twitter.com/MidhunPaini">
+                            <a href="https://twitter.com/MidhunPaini" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://github.com/midhunpaini">
+                            <a href="https://github.com/midhunpaini" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x" style="font-size:33px;"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://www.instagram.com/midhunpaini/">
+                            <a href="https://www.instagram.com/midhunpaini/" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://www.youtube.com/channel/UCYVeQCsL52h6lklbNdxHs5Q">
+                            <a href="https://www.youtube.com/channel/UCYVeQCsL52h6lklbNdxHs5Q" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
@@ -425,23 +452,65 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbygOrAu6CCmBSdzSZianVouxuZm16v_U6ilu23grPlcqPZ_3EqC6rHGfIL4qgSDltVy/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")    
+    
+    
+       
+    <script>      
+       
+
+    function validate(){
+                if(document.f1.name.value==='')
+                {
+                    document.getElementById("pname").innerHTML="*fill the form";
+                    document.getElementById('inpn').focus;
+                    document.getElementById('inpn').style.borderColor='red'
+                    return false;
                 }
+                else if(!isNaN(document.f1.name.value))
+                {
+                    document.getElementById("pname").innerHTML="*only text";
+                    document.getElementById('inpn').focus;
+                    document.getElementById('inpn').style.borderColor='red'
+                    return false;
+                }
+                else if(document.f1.email.value===""){
+                    document.getElementById("pemail").innerHTML="*fill the form";
+                    document.getElementById('inpe').focus;
+                    document.getElementById('inpe').style.borderColor='red'
+                    return false;
+                }
+                
+                
+                else if(document.f1.textArea.value===""){
+                    document.getElementById("parea").innerHTML="*fill the form";
+                    document.getElementById('inpa').focus;
+                    document.getElementById('inpa').style.borderColor='red'
+                    return false;
+                }
+        
+          else{
+
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbz5WYjhZwAL0UoJ1Xx0qm5_K9QSqxbWkCrjgNk5eRbGMPysp2jujvbCXcagjeUBq-TT/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Message send successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                  
+                })
             })
-        })
-    </script>
+          }
+        }
+        </script>
+            
 </body>
 </html>
