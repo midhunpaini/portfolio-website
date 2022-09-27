@@ -18,8 +18,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Midhun Webpage Title</title>
-    
+    <title>Midhun Webpage Title</title>    
     <!-- Styles -->
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,6 +30,7 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -167,7 +167,7 @@
 
 
     <!-- Details -->
-	<div class="split">
+	<div class="split pb-5">
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
             <div class="container">    
@@ -200,57 +200,65 @@
     </div> <!-- end of split -->
     <!-- end of details -->
 
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
+       
+        <!-- Section Divider -->
+        <div class="container py-5">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Delivered projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/project-1.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Week 1, <strong>Project:</strong> Static Netflix Website clone for brocamp week 1 using html and css <a class="blue" href="https://midhunpaini.github.io/Netflix-/">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/project-2.png" alt="alternative">
-                            </a>                           
-                       
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Week 2, <strong>Project:</strong> Responsive AMD webite clone for Brocamp week 2 project using html,css and bootstrap <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
+                    <hr class="section-divider">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
+        <!-- end of section divider -->
 
+        <!-- Works -->
+        <div class="basic-4 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="text-container">
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/work-1.png" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+                            <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-container">
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/work-2.png" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+                            <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-container">
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/work-3.png" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+                            <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->              
+             </div> <!-- end of container -->
+        </div> <!-- end of basic-4 -->
+        <!-- end of works -->
 
-    
-
-
-   
-
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
+        <!-- Section Divider -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="section-divider">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <!-- end of section divider -->
 
 
     <!-- Questions -->
@@ -344,13 +352,12 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
-                    
+                <div class="col-lg-12">                    
                      <form action="" name="f1" method="post" id="submit-form"  class="contact__form">
                         <table style="width: 100%">
                         <div class="contact__form-field form-group ">
                               <tr>
-                              <td><label class="contact_form-label" for="email">Name</label><input type="text" class="contact_form-input form-control-input" id="inpn" name = "name" placeholder="enter your name"></td>
+                              <td><input type="text" class="contact_form-input form-control-input" id="inpn" name = "name" placeholder="Name"></td>
                               </tr>             
                               <tr>
                               <td><p class="ere"  id="pname"></p></td>
@@ -358,10 +365,9 @@
                         </div>
           
           
-          
                         <div class="contact__form-field form-group">
                               <tr>
-                              <td><label class="contact_form-label" for="email">Email</label><input type="email"id="inpe"  class="contact_form-input form-control-input" name = "email" placeholder="enter your Email ID" data-rule="required"></td>
+                              <td><input type="email"id="inpe" class="contact_form-input form-control-input" name = "email" placeholder="Email" data-rule="required"></td>
                               </tr>
                               <tr>
                               <td><p class="ere" id="pemail"></p></td>
@@ -371,7 +377,7 @@
           
                         <div class="contact__form-field form-group"></div>
                                 <tr>
-                                <td><label class="contact_form-label" for="email">Message</label><textarea name="textArea" class="contact_form-input form-control-textarea" id="inpa" id="" cols="30" rows="10"></textarea></td>
+                                <td><textarea name="textArea" class="contact_form-input form-control-textarea" id="inpa" id="" cols="30" rows="10"></textarea></td>
                                 </tr>
                                 <tr>
                                 <td><p class="ere" id="parea"></p></td>
@@ -455,7 +461,7 @@
     
     
        
-    <script>      
+    <!-- <script>      
        
 
     function validate(){
@@ -468,7 +474,7 @@
                 }
                 else if(!isNaN(document.f1.name.value))
                 {
-                    document.getElementById("pname").innerHTML="*only text";
+                    document.getElementById("pname").innerHTML="Enter a Valid name";
                     document.getElementById('inpn').focus;
                     document.getElementById('inpn').style.borderColor='red'
                     return false;
@@ -510,7 +516,72 @@
             })
           }
         }
-        </script>
+        </script> -->
+
+        <script>
+            function validation(){
+        
+          
+        
+        
+        let fname=document.getElementById('inpn').value
+        let emailAddress=document.getElementById('inpe').value
+        checker=(isNaN(fname) && isNaN(emailAddress))
+        if(checker){
+          return 0;
+         
+        }else{
+          return 10;
+        }
+        }
+          
+           $(document).ready(function(){
+            $("#submit-form").validate({
+              rules:{
+                fname:{
+                  required:true,
+                  minlength:4
+                },
+                email:{
+                  required:true,
+                  email:true
+                }
+              },
+              submitHandler: function(form){
+        
+                var test = validation();
+                    if(test===0){
+                    $.ajax({
+                        url:"https://script.google.com/macros/s/AKfycbz5WYjhZwAL0UoJ1Xx0qm5_K9QSqxbWkCrjgNk5eRbGMPysp2jujvbCXcagjeUBq-TT/exec",
+                        data:$("#submit-form").serialize(),
+                        method:"post",
+                        success:function (response){
+                            alert("Form submitted successfully")
+                            window.location.reload()
+                            //window.location.href="https://google.com"
+                        },
+                        error:function (err){
+                            alert("Something Error")
+            
+                        }
+                    })
+                  }else{
+                    alert('incorret info')
+        
+                  }
+        
+              }
+            
+        
+        
+        
+            })
+        
+          })
+          </script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
             
 </body>
 </html>

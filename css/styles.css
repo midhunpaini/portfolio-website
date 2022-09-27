@@ -1358,3 +1358,7 @@ a:hover.back-to-top {
 	  @media only screen and (max-width: 37.5em) {
 		.contact__btn {
 		  width: 100%; } }
+
+		.error{
+			color: red;
+		}
